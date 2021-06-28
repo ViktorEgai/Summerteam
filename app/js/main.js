@@ -40,3 +40,14 @@ document.addEventListener('click', function(e) {
 document.addEventListener('scroll', function() {
    navbar.classList.remove('navbar__list--visible'); 
 });
+
+const galleryImage = document.querySelectorAll('.gallery__image');
+const galleryImageWidth = document.querySelector('.gallery__image').offsetWidth;
+const galleryImageHeight = document.querySelector('.gallery__image').offsetHeight;
+galleryImage.forEach(function(e) {
+  e.style.height = galleryImageWidth - 24 + "px";
+//   console.log(galleryImageWidth);
+//   console.log(galleryImageHeight);   
+//   this.style.height = galleryImageWidth + "px";
+});
+// galleryImage.style.height = galleryImageWidth - 24 + "px";
