@@ -19,6 +19,8 @@
       line-height: 26px
   .about-us
     padding: 70px 0
+    &::before
+      height: 1600px
     &__title
       margin-bottom: 40px
     &__text
@@ -26,6 +28,62 @@
       line-height: 26px
     &__video
       height: 270px
+  .prices
+    &__title
+      margin-bottom: 50px
+    &__info
+      &-text
+        font-size: 26px
+        line-height: 40px
+      &-try
+        font-size: 32px
+        line-height: 40px
+    &__pricetag
+      &-old
+        font-size: 42px
+        line-height: 50px
+      &-new
+        font-size: 60px
+        line-height: 75px
+  .schedule
+    &__title
+      margin-bottom: 50px
+    &__time
+      font-size: 32px
+  .gallery
+    padding-top: 70px
+  .contacts
+    &::before
+      top: -65px
+      height: calc( 100% + 65px)
+      background-size: 115%
+    &__title
+      margin-bottom: 40px
+    &__item
+      font-size: 26px
+      line-height: 36px
+      margin-bottom: 15px
+    &__subtitle
+      font-size: 26px
+      line-height: 40px
+    &__social
+      &-link
+        width: 60px
+        height: 60px
+        &:not(:last-child)
+          margin-right: 30px
+  .footer
+    &__form
+      &-description
+        font-size: 32px
+        line-height: 46px
+  .form
+    &__label
+      margin-bottom: 15px
+    &__name
+      margin-bottom: 15px
+      font-size: 22px
+      line-height: 30px
 @media  ( max-width: 992px )
   .title
     font-size: 34px
@@ -53,9 +111,59 @@
       font-size: 14px
       line-height: 24px
   .about-us
+    padding-bottom: 30px
+    &::before
+      background-image: url(../img/bg-black-big.png)
+      background-size: 110%
+      height: 1400px
     &__video
       height: 240px
-
+    &__button
+      margin-top: 30px
+  .prices
+    &__title
+      margin-bottom: 35px
+    &__info
+      &-text
+        font-size: 20px
+        line-height: 36px
+      &-try
+        font-size: 23px
+        line-height: 36px
+    &__pricetag
+      &-old
+        font-size: 36px
+        line-height: 50px
+      &-new
+        font-size: 42px
+        line-height: 75px
+  .schedule
+    &__title
+      margin-bottom: 40px
+    &__time
+      font-size: 26px
+      line-height: 40px
+  .gallery
+    padding-top: 50px
+    &__wrapper
+      margin-bottom: 35px
+    &__image
+      margin-bottom: 20px
+  .contacts
+    padding: 60px 0
+    &__title
+      margin-bottom: 30px
+    &__item
+      font-size: 20px
+      line-height: 28px
+    &__social-link
+      width: 55px
+      height: 55px
+  .footer
+    &__form
+      &-description
+        font-size: 26px
+        line-height: 42px
 @media  ( max-width: 768px )
   .button
     font-size: 14px
@@ -82,8 +190,8 @@
         margin: 0 0 20px
   .about-us
     &::before
-      background-position: center -25px
-      background-repeat: repeat
+      height: 1600px
+      background-size: 115%
   .hero
     padding-top: 20px
     &__slide-image
@@ -109,7 +217,55 @@
       margin-bottom: 20px
     &__button
       margin: auto
-@media ( max-width: 540px )
+  .prices
+    &__title
+      margin-bottom: 30px
+    &__info
+      margin-bottom: 50px
+      &-block
+        margin-bottom: 30px
+      &-try
+        font-size: 26px
+        line-height: 40px
+    &__pricetag
+      &-old
+        font-size: 36px
+      &-new
+        font-size: 50px
+  .gallery
+    &__image
+      &:nth-child(n+7)
+        display: none
+  .contacts
+    padding: 30px 0 50px
+    &::before
+      background-image: url(../img/bg-black-big.png)
+      background-size: cover
+    &__info
+      margin-bottom: 25px
+    &__item
+      font-size: 18px
+      line-height: 26px
+    &__subtitle
+      text-align: center
+    &__social
+      margin: 0 auto
+      justify-content: center
+    &__map
+      max-height: 250px
+  .footer
+    padding-top: 50px
+    &__form
+      &-description
+        margin: 0 0 20px
+    &__logo
+      font-size: 32px
+      line-height: 45px
+    &-navbar
+      &__link
+        font-size: 18px
+        line-height: 24px
+@media ( max-width: 576px )
   .title
     font-size: 26px
     line-height: 34px
@@ -122,13 +278,18 @@
     &__title
       font-size: 16px
       line-height: 24px
+      width: 90%
     &__text
       width: 100%
       font-size: 14px
       line-height: 18px
+      max-height: 60px
+      overflow: auto
     &__button
       margin: auto
   .about-us
+    &::before
+      background-repeat: repeat
     &__title
       margin-bottom: 20px
     &__text
@@ -136,6 +297,66 @@
       line-height: 24px
     &__video
       height: 240px
+  .prices
+    &__title
+      margin-bottom: 20px
+    &__info
+      &-text
+        font-size: 16px
+        line-height: 24px
+        margin-bottom: 30px
+      &-try
+        font-size: 16px
+        line-height: 24px
+    &__pricetag
+      &-old
+        font-size: 26px
+        line-height: 40px
+      &-new
+        font-size: 36px
+        line-height: 48px
+  .schedule
+    &__title
+      margin-bottom: 20px
+    &__time
+      font-size: 20px
+      line-height: 36px
+  .gallery
+    &::before
+      background-image: url(../img/bg-red-big.png)
+      background-size: 100%
+    &__title
+      margin-bottom: 20px
+    &__wrapper
+      margin-bottom: 20px
+  .contacts
+    &::before
+      top: -35px
+      height: calc(100% + 35px)
+      background-size: 105%
+    &__item
+      font-size: 16px
+      line-height: 24px
+    &__subtitle
+      font-size: 22px
+      line-height: 36px
+    &__social
+      &-link
+        width: 40px
+        height: 40px
+  .footer
+    &__form
+      &-description
+        font-size: 24px
+        line-height: 38px
+    &-navbar
+      &__list
+        flex-direction: column
+        align-items: center
+      &__item
+        &:not(:last-child)
+          margin: 0 0 15px
+
 @media  ( min-width: 992px )
   .button
     &:hover
@@ -154,4 +375,7 @@
           opacity: 1
   .icon
     &:hover
-      fill: #000
+      fill: #ffffff
+  .link
+    &:hover
+      text-decoration: underline

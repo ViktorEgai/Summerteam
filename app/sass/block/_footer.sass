@@ -7,6 +7,7 @@
       font-family: 'Roboto Slab', sans-serif
       font-size: 40px
       line-height: 53px
+      margin-top: 30px
   &__bottom
     border-top: 3px solid #fff
     padding-top: 30px
@@ -15,8 +16,15 @@
     font-size: 36px
     line-height: 47px
     margin-bottom: 20px
-  &__navbar
+  &-navbar
     margin-bottom: 30px
+    &__item
+      &:not(:last-child)
+        margin-right: 35px
+    &__link
+      font-weight: 500
+      font-size: 24px
+      line-height: 28px
   &__info
     text-align: center
     max-width: 350px
