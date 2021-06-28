@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&family=Rubik:wght@400;500;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="css/style.min.css" />
+
     <title>Главная - Summerteam</title>
   </head>
   <body>
@@ -54,35 +55,35 @@
               <div class="swiper-wrapper">
                 <!-- Slides -->
                 <div class="swiper-slide hero__slide">
-                  <img class="swiper-lazy hero__slide-image" data-src="img/hero/slide-1.jpg" />
+                  <img class="swiper-lazy hero__slide-image" data-src="img/hero/slide-1.jpg" alt="" />
                   <div class="swiper-lazy-preloader"></div>
                 </div>
                 <div class="swiper-slide hero__slide">
-                  <img class="swiper-lazy hero__slide-image" data-src="img/hero/slide-2.jpg" />
+                  <img class="swiper-lazy hero__slide-image" data-src="img/hero/slide-2.jpg" alt="" />
                   <div class="swiper-lazy-preloader"></div>
                 </div>
                 <div class="swiper-slide hero__slide">
-                  <img class="swiper-lazy hero__slide-image" data-src="img/hero/slide-3.jpg" />
+                  <img class="swiper-lazy hero__slide-image" data-src="img/hero/slide-3.jpg" alt="" />
                   <div class="swiper-lazy-preloader"></div>
                 </div>
                 <div class="swiper-slide hero__slide">
-                  <img class="swiper-lazy hero__slide-image" data-src="img/hero/slide-4.jpg" />
+                  <img class="swiper-lazy hero__slide-image" data-src="img/hero/slide-4.jpg" alt="" />
                   <div class="swiper-lazy-preloader"></div>
                 </div>
                 <div class="swiper-slide hero__slide">
-                  <img class="swiper-lazy hero__slide-image" data-src="img/hero/slide-5.jpg" />
+                  <img class="swiper-lazy hero__slide-image" data-src="img/hero/slide-5.jpg" alt="" />
                   <div class="swiper-lazy-preloader"></div>
                 </div>
                 <div class="swiper-slide hero__slide">
-                  <img class="swiper-lazy hero__slide-image" data-src="img/hero/slide-6.jpg" />
+                  <img class="swiper-lazy hero__slide-image" data-src="img/hero/slide-6.jpg" alt="" />
                   <div class="swiper-lazy-preloader"></div>
                 </div>
                 <div class="swiper-slide hero__slide">
-                  <img class="swiper-lazy hero__slide-image" data-src="img/hero/slide-7.jpg" />
+                  <img class="swiper-lazy hero__slide-image" data-src="img/hero/slide-7.jpg" alt="" />
                   <div class="swiper-lazy-preloader"></div>
                 </div>
                 <div class="swiper-slide hero__slide">
-                  <img class="swiper-lazy hero__slide-image" data-src="img/hero/slide-8.jpg" />
+                  <img class="swiper-lazy hero__slide-image" data-src="img/hero/slide-8.jpg" alt="" />
                   <div class="swiper-lazy-preloader"></div>
                 </div>
               </div>
@@ -208,6 +209,96 @@
         </div>
         <!-- /.container -->
       </section>
+      <section class="contacts">
+        <div class="container">
+          <div class="contacts__wrapper row">
+            <div class="contacts__info col-md-6 col-12">
+              <h2 class="contacts__title title">Где мы находимся</h2>
+              <p class="contacts__item"><b>Адрес: </b> г.Волжский, проспект Ленина, 52 (2 этаж), остановка "Спутник"</p>
+              <p class="contacts__item"><b>Телефон: </b> <a class="contacts__item-link" href="tel:+79616747420">+7 (961) 674-74-20</a></p>
+              <p class="contacts__item"><b>E-mail: </b> <a class="contacts__item-link" href="mailto:summerteam@mail.ru">summerteam@mail.ru</a></p>
+              <h3 class="contacts__subtitle">Мы в социальных сетях</h3>
+              <div class="contacts__social social">
+                <a class="contacts__social-link" target="_blank" href="#">
+                  <svg class="icon">
+                    <use href="img/icons/social.svg#vk"></use>
+                  </svg>
+                </a>
+                <a class="contacts__social-link" target="_blank" href="https://instagram.com/choreovitasummerteam">
+                  <svg class="icon">
+                    <use href="img/icons/social.svg#instagram"></use>
+                  </svg>
+                </a>
+                <a class="contacts__social-link" target="_blank" href="#">
+                  <svg class="icon">
+                    <use href="img/icons/social.svg#youtube"></use>
+                  </svg>
+                </a>
+                <a class="contacts__social-link" target="_blank" href="#">
+                  <svg class="icon">
+                    <use href="img/icons/social.svg#tik-tok"></use>
+                  </svg>
+                </a>
+              </div>
+              <!-- /.contacts__social -->
+            </div>
+            <!-- /.contacts__info -->
+            <div class="contacts__map col-md-6" id="map">
+              <img class="contacts__map-image" src="img/map.png" alt="" />
+            </div>
+            <!-- /.contacts__map -->
+          </div>
+          <!-- /.contacts__wrapper -->
+        </div>
+        <!-- /.container -->
+      </section>
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__wrapper">
+            <div class="footer__form">
+              <p class="footer__form-description">Остались вопросы или отите записаться на пробное занятие? Заполните форму и мы Вам перезвоним</p>
+              <form class="form">
+                <label class="form__label">
+                  <span class="form__name">Ваше имя</span>
+                  <input class="form__input input" type="text" />
+                </label>
+                <label class="form__label">
+                  <span class="form__name">Ваш телефон</span>
+                  <input class="form__input input" type="text" />
+                </label>
+                <label class="footer__label">
+                  <span class="form__name">Сообщение</span>
+                  <textarea class="footer__textarea input"></textarea>
+                </label>
+                <button class="form__button button" type="submit">Отправить</button>
+              </form>
+            </div>
+            <!-- /.footer__form -->
+            <div class="footer__bottom">
+              <a class="footer__logo logo" href="#">SummerTeam</a>
+              <nav class="footer__navbar">
+                <ul class="navbar__list d-flex">
+                  <li class="navbar__item">
+                    <a class="navbar__link" href="#">Главная</a>
+                  </li>
+                  <li class="navbar__item">
+                    <a class="navbar__link" href="#">О нас</a>
+                  </li>
+                  <li class="navbar__item">
+                    <a class="navbar__link" href="#">Цены и график</a>
+                  </li>
+                  <li class="navbar__item">
+                    <a class="navbar__link" href="#">Галерея</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <!-- /.footer__bottom -->
+          </div>
+          <!-- /.footer__wrapper -->
+        </div>
+        <!-- /.container -->
+      </footer>
     </main>
     <script src="js/libs.min.js"></script>
     <script src="js/main.js"></script>
